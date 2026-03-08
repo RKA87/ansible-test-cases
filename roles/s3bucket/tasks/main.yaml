@@ -18,7 +18,7 @@
       block_public_policy: true
       ignore_public_acls: true
       restrict_public_buckets: true
-    policy: "{{ lookup('template','policy.json') }}"
+    policy: "{{ lookup('template','policy.json.j2') }}"
     tags: "{{ common_tags }}"
   when:
     - action == "create"
