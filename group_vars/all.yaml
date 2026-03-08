@@ -1,6 +1,6 @@
 region: "us-east-1"
-bucket_name: "ansible-s3-bucket"
 env: "dev"
+bucket_name: "default-ansible-bucket"
 action: "create"
 common_tags:
   Owner: ansible
