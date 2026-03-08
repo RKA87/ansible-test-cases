@@ -1,0 +1,11 @@
+region: "us-east-1"
+bucket_name: "ansible-s3-bucket"
+env: "dev"
+action: "create"
+common_tags:
+  Owner: ansible
+  Project: aws
+  Environment: "{{ env }}"
+
+ansible_user: ec2-user
+ansible_password: DevOps321
