@@ -1,4 +1,4 @@
 - name: "Create aws resources"
-  host: localhost
+  hosts: local
   roles:
     - role: "s3bucket"

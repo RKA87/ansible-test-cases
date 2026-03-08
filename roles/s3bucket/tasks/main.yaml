@@ -20,5 +20,11 @@
       restrict_public_buckets: true
     policy: "{{ lookup('file','policy.json') }}"
     tags: "{{ common_tags }}"
-    when:
+  when:
     - action == "create"
+  register: s3_output
+
+- name: "Display the message"
+  ansible.builtin.debug:
+    msg: "Bucket {{ bucket_name }}-{{ env }} created successfully"
+  when: s3_output.changed
