@@ -6,13 +6,11 @@
     versioning: true
     encryption: "AES256"
     acl: "private"
-    object_lock_configuration:
-      object_lock_enabled: "Enabled"
-      object_lock_default_retention:
-                  mode: "GOVERNANCE"
-                  days: 30
-    object_ownership_controls:
-      object_ownership: "BucketOwnerPreferred"
+    object_lock_enabled: true
+    object_lock_default_retention:
+      mode: "GOVERNANCE"
+      days: 30
+    object_ownership: "BucketOwnerPreferred"
     public_access:
       block_public_acls: true
       block_public_policy: true
