@@ -20,3 +20,5 @@
       restrict_public_buckets: true
     policy: "{{ lookup('file','policy.json') }}"
     tags: "{{ common_tags }}"
+    when:
+    - action == "create"
